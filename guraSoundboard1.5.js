@@ -95,7 +95,7 @@ function guranoise2() {
   //console.log("guranoise2(): " + randNum);
 
   if (randNum == 11) {
-    document.getElementById("gurabutton").src = "peko.gif";
+    document.getElementById("gurabutton2").src = "peko.gif";
     setTimeout(guraimg, 3500);
 
   }
