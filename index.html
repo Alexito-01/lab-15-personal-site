@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles//monokai-sublime.min.css">
+	<link rel="icon" href="icon.png">
+	<title>Alex Finale</title>
+</head>
+<body onload="draw()">
+	
+	<script src="guraSoundboard1.5.js"></script>
+	<script src="songs.js"></script>
+	<script src="musicPlayer.js"></script>
+	<script src="mario.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+	<script type="text/javascript">hljs.highlightAll(); </script>
+
+	<header class="header"><center style="width: 1200px; margin: auto;">
+		<img id="gurabutton" src="guraDance.gif" width="216" height="216" style="transform: scaleX(-1);" onclick="guranoise()">
+		<img class="banner1" onclick="fubuki()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner2" onclick="ina()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner3" onclick="mori()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner4" onclick="gura()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner5" onclick="kiara()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner6" onclick="ame()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner7" onclick="pekora()" src="Art-Banner20.gif" width="384" height=216">
+		<img src="Art-Banner20.gif" width="384" height=216">
+		<img id="gurabutton2" src="guraDance.gif" width="216" height="216" onclick="guranoise2()">
+	</center></header>
+
+	<div class="navBar"><center>
+		<!--<a href="index.html"><button class="button">Home Page</button></a>-->
+		<a href="about_me.html"><button class="button">About Me</button></a>
+		<a href="contact_me.html"><button class="button">Contact Me</button></a>
+		<a href="Manga.html"><button class="button">Manga List</button></a>
+		<a href="scoutsim.html"><button class="button">Scout Simulator</button></a>
+		<a href="portfolio.html"><button class="button">My Portfolio</button></a>
+	</center></div>
+
+
+	<center>
+	<p>Hello this is my web page.</p>
+	<p>Here I have some of the works I that did though out the school semester, <strong>enjoy</strong> ;w; </p>
+	</center>
+	<!--<center><embed  id="debugid" src="debug.html" height="8000" width="1920" style="opacity: 0%"></embed></center>-->
+	<br>
+	<br>
+	<br>
+	<div><center>
+		<h2>Music Player</h2>
+		<img id="musicIMG" src="playlist/SL.jpg" height="250" width="250">
+		<br>
+		<input type="button" id="prevbutton" onclick="prev()" value="Previous">
+		<input type="button" id="playbutton" onclick="startmusic()" value="Play">
+		<input type="button" id="nextbutton" onclick="next()" value="Next">
+		<input type="button" id="shufflebutton" onclick="shuff()" value="Shuffle">
+		<br>
+		<h2 id="songName" class="headerfont">Swordland</h2>
+	</center></div>
+	<br>
+	<br>
+	<br>
+	<div><center>
+		<h2>Height Calculator Tool</h2>
+		<img src="httc.jpg">
+		<br>
+		<br>
+		<br>
+		<button onclick="HeightTool()">Click Me</button>
+		<script type="text/javascript">
+			function HeightTool() {
+
+				var height = parseInt(prompt("Input your height:  cm", "172"));
+				window.alert("Your height is " + height + "cm!")
+			}
+
+		</script>
+	</center></div>
+	<br>
+	<br>
+	<br>
+	<div>
+		<canvas id="sketch" width="700" height="900" style="padding-left: 250px;"></canvas>
+	<div class="mariocode"><h2><center>Mario</center></h2>
+		<pre><code class="language-javascript hljs">
+<span class="hljs-keyword">function</span> draw() {
+    <span class="hljs-keyword">var</span> sketch = <span class="hljs-keyword">document.getElementById</span>(<span class="hljs-string">'sketch'</span>);
+    <span class="hljs-keyword">var</span> context = sketch.<span class="hljs-keyword">getContext</span>(<span class="hljs-string">'2d'</span>);
+
+    <span class="hljs-keyword">var</span> red = <span class="hljs-string">"#FD0003"</span>;
+    <span class="hljs-keyword">var</span> blue = <span class="hljs-string">"#0070C8"</span>;
+    <span class="hljs-keyword">var</span> yellow = <span class="hljs-string">"#F0FF08"</span>;
+    <span class="hljs-keyword">var</span> brown = <span class="hljs-string">"#914B05"</span>;
+    <span class="hljs-keyword">var</span> black = <span class="hljs-string">"#000000"</span>;
+    <span class="hljs-keyword">var</span> skin = <span class="hljs-string">"#FBC08E"</span>;
+
+    <span class="hljs-comment">//Row 1</span>
+    context.fill = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 2</span>
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 3</span>
+    context.fill = brown;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fill = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fill = black;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fill = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 4</span>
+    context.fillStyle = brown;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = brown;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = black;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">200</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 5</span>
+    context.fillStyle = brown;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = brown;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = black;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">650</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 6</span>
+    context.fillStyle = brown;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = black;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 7</span>
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">350</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 8</span>
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">400</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 9</span>
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">450</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 10</span>
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">50</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">500</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 11</span>
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">50</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = yellow;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = yellow;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = red;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">550</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 12</span>
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">50</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">600</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 13</span>
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">50</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">300</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">350</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.fillStyle = skin;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">650</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 14</span>
+    context.fillStyle = blue;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">700</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">700</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">250</span>, <span class="hljs-number">700</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">400</span>, <span class="hljs-number">700</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">700</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">700</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 15</span>
+    context.fillStyle = brown;
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">750</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">750</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">750</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">750</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">750</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">750</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    <span class="hljs-comment">//Row 16</span>
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">50</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">100</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">150</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">200</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">450</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">500</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">550</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+    context.<span class="hljs-keyword">fillRect</span>(<span class="hljs-number">600</span>, <span class="hljs-number">800</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+}
+<span class="hljs-keyword">draw</span>();</code></pre></div></div>
+</body>
+</html>

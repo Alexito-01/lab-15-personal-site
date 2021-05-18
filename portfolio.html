@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles//monokai-sublime.min.css">
+	<link rel="icon" href="icon.png">
+	<title>Alex Finale</title>
+</head>
+<body>
+	<script src="guraSoundboard.js"></script>
+	<script src="songs.js"></script>
+	<script src="all_labs.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+	<script type="text/javascript">hljs.highlightAll(); </script>
+	
+	<header class="header"><center style="width: 1200px; margin: auto;">
+		<img id="gurabutton" src="guraDance.gif" width="216" height="216" style="transform: scaleX(-1);" onclick="guranoise()">
+		<img class="banner1" onclick="fubuki()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner2" onclick="ina()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner3" onclick="mori()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner4" onclick="gura()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner5" onclick="kiara()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner6" onclick="ame()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner7" onclick="pekora()" src="Art-Banner20.gif" width="384" height=216">
+		<img src="Art-Banner20.gif" width="384" height=216">
+		<img id="gurabutton2" src="guraDance.gif" width="216" height="216" onclick="guranoise2()">
+	</center></header>
+
+	<div class="navBar"><center>
+		<a href="index.html"><button class="button">Home Page</button></a>
+		<a href="about_me.html"><button class="button">About Me</button></a>
+		<a href="contact_me.html"><button class="button">Contact Me</button></a>
+		<a href="Manga.html"><button class="button">Manga List</button></a>
+		<a href="scoutsim.html"><button class="button">Scout Simulator</button></a>
+		<!--<a href="portfolio.html"><button class="button">My Portfolio</button></a>-->
+	</center></div>
+
+	<h1><center><strong>My Portfolio</strong></center></h1>
+
+	<center>
+		<div id="projectbox">
+			<h1>lab-05-js-py</h1>
+			<h2 class="headerfont">Greetings</h2>
+			<button class="button" onclick="greetings()">Run Code</button>
+		<!--<pre><code class="language-javascript hljs">
+<span class="hljs-keyword">var</span> username = <span class="hljs-keyword">prompt</span>(<span class="hljs-string">"What is your name?"</span>);
+<span class="hljs-keyword">console</span>.<span class="hljs-keyword">log</span>(<span class="hljs-string">"Hello there, "</span> <span class="hljs-keyword">+</span> username <span class="hljs-keyword">+</span> <span class="hljs-string">"!"</span>); 
+		</code></pre>-->
+			<h2 class="headerfont">Madlibs</h2>
+			<button class="button" onclick="madlibs()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-06-review</h1>
+			<h2 class="headerfont">Miles</h2>
+			<button class="button" onclick="miles()">Run Code</button>
+			<h2 class="headerfont">Temperature</h2>
+			<button class="button" onclick="temp()">Run Code</button>
+			<h2 class="headerfont">Say Twice</h2>
+			<button class="button" onclick="saytwice()">Run Code</button>
+			<h2 class="headerfont">Shout</h2>
+			<button class="button" onclick="shout()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-07-conditionals</h1>
+			<h2 class="headerfont">Cake</h2>
+			<button class="button" onclick="cake()">Run Code</button>
+			<h2 class="headerfont">Spanish</h2>
+			<button class="button" onclick="spanish()">Run Code</button>
+			<h2 class="headerfont">OddCal</h2>
+			<button class="button" onclick="oddcal()">Run Code</button>
+			<h2 class="headerfont">Flow Chart</h2>
+			<button class="button" onclick="flowchart()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-08-for-loops</h1>
+			<h2 class="headerfont">Tens</h2>
+			<button class="button" onclick="tens()">Run Code</button>
+			<h2 class="headerfont">Average</h2>
+			<button class="button" onclick="average()">Run Code</button>
+			<h2 class="headerfont">Average (Loops Version)</h2>
+			<button class="button" onclick="averagev()">Run Code</button>
+			<h2 class="headerfont">Fizzbuzz</h2>
+			<button class="button" onclick="fizzbuzz()">Run Code</button>
+			<h2 class="headerfont">Party</h2>
+			<button class="button" onclick="party()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-09-functions</h1>
+			<h2 class="headerfont">Double</h2>
+			<button class="button" onclick="double()">Run Code</button>
+			<h2 class="headerfont">Double with Convertion</h2>
+			<button class="button" onclick="doublec()">Run Code</button>
+			<h2 class="headerfont">Plurize</h2>
+			<button class="button" onclick="plurize()">Run Code</button>
+			<h2 class="headerfont">Factorial</h2>
+			<button class="button" onclick="factorial()">Run Code</button>
+			<h2 class="headerfont">Factorial (Version 2)</h2>
+			<button class="button" onclick="factorialv()">Run Code</button>
+			<h2 class="headerfont">-5 to 3</h2>
+			<button class="button" onclick="ftt()">Run Code</button>
+			<h2 class="headerfont">Yes and No</h2>
+			<button class="button" onclick="yesandno()">Run Code</button>
+			<h2 class="headerfont">Fortune</h2>
+			<button class="button" onclick="fortune()">Run Code</button>
+			<h2 class="headerfont">Greetings</h2>
+			<button class="button" onclick="greetingsf()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-10-more-loops</h1>
+			<h2 class="headerfont">Gimmy My Number</h2>
+			<button class="button" onclick="gmn()">Run Code</button>
+			<h2 class="headerfont">Happy New Year</h2>
+			<button class="button" onclick="ny()">Run Code</button>
+			<h2 class="headerfont">Happy New Year (Version 2)</h2>
+			<button class="button" onclick="nyv()">Run Code</button>
+			<h2 class="headerfont">Which Floor Do you Work on</h2>
+			<button class="button" onclick="wfdywo()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-13a-canvas</h1>
+			<h2 class="headerfont">Square</h2>
+			<button class="button" onclick="square()">Run Code</button>
+			<h2 class="headerfont">Square Circle</h2>
+			<button class="button" onclick="squarecircle()">Run Code</button>
+			<h2 class="headerfont">Custom Circle</h2>
+			<button class="button" onclick="customcircle()">Run Code</button>
+			<!--<h2 class="headerfont">Circle Animate</h2>
+			<button class="button" onclick="animatecode()">Run Code</button>-->
+			<h2 class="headerfont">Five</h2>
+			<button class="button" onclick="five()">Run Code</button>
+			<h2 class="headerfont">Alternating</h2>
+			<button class="button" onclick="alternating()">Run Code</button>
+		</div>
+		<button onclick="clearcanvas()">Clear Canvas</button>
+		<br>
+		<canvas id="sketch" width="300" height="300"></canvas>
+	</center>
+</body>
+</html>

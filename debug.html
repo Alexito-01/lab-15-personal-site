@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>Alex Finale</title>
+</head>
+<body>
+	<script src="guraSoundboard.js"></script>
+	<script src="songs.js"></script>
+	<script src="all_labs.js"></script>
+	<center style="width: 1200px; margin: auto;">
+		<img id="gurabutton" src="guraDance.gif" width="216" height="216" style="transform: scaleX(-1);" onclick="guranoise()">
+		<img class="banner1" onclick="fubuki()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner2" onclick="ina()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner3" onclick="mori()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner4" onclick="gura()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner5" onclick="kiara()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner6" onclick="ame()" src="Art-Banner20.gif" width="384" height=216">
+		<img class="banner7" onclick="pekora()" src="Art-Banner20.gif" width="384" height=216">
+		<img src="Art-Banner20.gif" width="384" height=216">
+		<img id="gurabutton2" src="guraDance.gif" width="216" height="216" onclick="guranoise2()">
+	</center>
+
+
+	<center>
+	<a href="index.html"><button class="button">Home Page</button></a>
+	<a href="about_me.html"><button class="button">About Me</button></a>
+	<a href="contact_me.html"><button class="button">Contact Me</button></a>
+	<a href="Manga.html"><button class="button">Manga List</button></a>
+	<a href="scoutsim.html"><button class="button">Scout Simulator</button></a>
+	<a href="portfolio.html"><button class="button">My Portfolio</button></a>
+	</center>
+
+
+	<center>
+	<p>Hello this is my web page.</p>
+	<p>Here I have some of the works I that did though out the school semester, <strong>enjoy</strong> ;w; </p>
+	</center>
+	<br>
+	<br>
+	<br>
+	<canvas id="sketch" width="480" height="720"></canvas>
+	<script type="text/javascript">
+		function popup()
+		{
+
+			var yah = alert("Hello this is a test.")
+		}
+	</script>
+<!-------------------------------------------------------------------------About Me Page------------------------------------------------------------------->
+	<h1><center><strong>About Me</strong></center></h1>
+	<center>
+		<img src="Icebreaker.png" style="float: left; padding-left: 450px;">
+		<br>
+		<br>
+		<br>
+		<div style="width: 400px; padding-left: 450px;">
+			<p>&#9856;	One place I would like to go is Atlantis. I've heard many stories from there. I seen some of the theory of where the sunken city could be. It just seems like an interesting place to be in. If it has to be locations that still exist then it would have to be Japan. I'd love to go visit and just site see, kind of like the tourist that visit NYC, lol.</p>
+			<p>&#9857;	If I was stranded on a island there three things I would take would be a massive mansion to live in. The deed of said island so I have complete ownership of it, and a teleporter that lets me travel from the island to anywhere in the world that I want. Luckily the question did not say that could not include things that have not been invented yet.</p>
+			<p>&#9858;	If I could only eat one food then I would have to choose... <strong>Chicken</strong>. If it has to a dish then I would choose rice with chicken. I don't know, there is just something about chicken that I love.</p>
+			<p>&#9859;	If I had a million dollars the first thing I would do is split it into three sections. 1/3 would go into investments, another third would go into savings. The last third would be spending money. With the 333,333 dollars, I would use some of that to complete my manga collection.</p>
+			<p>&#9860;	One fictional character I would like to spend the day with is 
+				<a href="https://anilist.co/character/89019/Umaru-Doma" style="color: #fff;">Umaru Chan</a>. She like me, someone who would spend the day playing video games and be lazy around the house.</p>
+			<p>&#9861;	If I had three wishes, then I would choose relatively tame wishes.
+			<ol>
+				<li>
+					Have the ability to gain any super power I choose and to have it for as long as I choose, as well as being able to overlap powers.
+				</li> 
+				<li>
+					Have the ability to summon a new genie at the snap of my fingers.
+				</li>
+				<li>
+					Have the liquid armor, fully working, functional and in the final version.
+				</li>
+			</ol></p>
+		</div>
+	</center>
+<!-------------------------------------------------------------------------Contact Me Page------------------------------------------------------------------->
+	<br>
+	<br>
+	<br>
+	<center>
+		<h1><strong>Contact Me</strong></h1>
+			
+		<div class="contactmessage">
+			<h2>Email</h2>
+			<h3>firstlast@gmail.com</h3>
+			<h2>Phone Number</h2>
+			<h3>718-777-7777</h3>
+			<input id="contactbutton" type="button" onclick="pushOnButton()" value="Click to type Message.">
+		</div>
+	</center>
+	<script type="text/javascript">
+		var refresh = 0;
+		function pushOnButton() {
+
+			if (refresh ==0)
+			{	
+				document.querySelector("#contactbutton").value = "LMAO!!!";
+				alert("SIKE!!!");
+				alert("THAT'S THE WRONG NUMBER");
+				console.log("Look at this Dude...");
+				refresh = refresh + 1;
+			}
+			else if (refresh == 1) 
+			{
+				console.log("HAHAHAHAHA. Look at the top of his HEAD!");
+				setTimeout(alert("ERR: System Failure. Refreshing"), 1000);
+				window.location.reload();
+			}
+			else{console.log("True ERR, lol");}
+			
+		}
+	</script>
+<!-------------------------------------------------------------------------Manga Page------------------------------------------------------------------->
+	<center><h1 id="mangatitle">Reading</h1></center>
+	<table class="mangabox">
+		<tr><!--Layout made to fit five covers-->
+			<td>
+				<a href="https://anilist.co/manga/86279/Kishuku-Gakkou-no-Juliet/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Boarding School Juliet" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx86279-UF065BhrwVHW.jpg">
+				<p id="mangatitle"><center>Boarding School Juliet</center></p></a></td>
+			
+			<td>
+				<a href="https://anilist.co/manga/44721/DFrag/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="D-Frag!" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx44721-dekFBiCC9oEh.jpg">
+				<p id="mangatitle"><center>D-Frag!</center></p></a></td>
+			
+			<td>
+				<a href="https://anilist.co/manga/100664/Dont-Toy-With-Me-Miss-Nagatoro/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Please don't Bully me Nagatoro" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100664-uzN5998CDxPJ.jpg">
+				<p id="mangatitle"><center>Please don't Bully me Nagatoro</center></p></a></td>
+			
+			<td>
+				<a href="https://anilist.co/manga/101177/Fly-Me-to-the-Moon/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Fly me to the Moon" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx101177-FjjD5UWB3C3t.png">
+				<p id="mangatitle"><center>Fly me to the Moon</center></p></a></td>
+			
+			<td>
+				<a href="https://anilist.co/manga/86635/Kaguyasama-Love-is-War/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Love is War" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86635-EdaLQmsn86Fy.png">
+				<p id="mangatitle"><center>Love is War</center></p></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="https://anilist.co/manga/99943/RentAGirlfriend/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Rent a Girlfriend" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx99943-9nyupHrC2Qni.jpg">
+				<p id="mangatitle"><center>Rent a Girlfriend</center></p></a></td>
+			
+			<td>
+				<a href="https://anilist.co/manga/100230/The-Quintessential-Quintuplets/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Quintuple Sisters" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100230-TA0RQ9d7RVas.jpg">
+				<p id="mangatitle"><center>The Quintessential Quintuplets</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/101724/Uzakichan-Wants-to-Hang-Out/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Uzaki-chan wants to hang out" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx101724-OzatG05Yvc5v.jpg">
+				<p id="mangatitle"><center>Uzaki-chan wants to hang out</center></p></a></td>
+			
+			<td>
+				<a href="https://anilist.co/manga/98235/We-Never-Learn/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="We Never Learn" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98235-V6yBxNIrsOp0.jpg">
+				<p id="mangatitle"><center>We Never Learn</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/121017/Pokmon-Adventures-Red-Green--Blue/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Pokémon Adventures: Red, Green & Blue" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx121017-OJIrpOERoSnu.png">
+				<p id="mangatitle"><center>Pokémon Adventures: Red, Green & Blue</center></p></a></td>
+		</tr>
+	</table>
+	<center><h1 id="mangatitle">Completed</h1></center>
+	<table class="mangabox">
+		<tr>
+			<td>
+				<a href="https://anilist.co/manga/52993/Accel-World/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Accel World" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx52993-O5ln5W6WsDJ3.jpg">
+				<p id="mangatitle"><center>Accel World</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/80133/Himouto-Umaruchan/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Himouto! Umaru-chan" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx80133-vfN4b7MXgHKC.png">
+				<p id="mangatitle"><center>Himouto! Umaru-chan</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/81309/How-to-Raise-a-Boring-Girlfriend/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="How to Raise a Boring Girlfriend" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx81309-83xcDVaHIrMP.jpg">
+				<p id="mangatitle"><center>How to Raise a Boring Girlfriend</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/76716/Masamunekuns-Revenge/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Masamune-kun’s Revenge" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx76716-wuf4DCyBf9aT.png">
+				<p id="mangatitle"><center>Masamune-kun’s Revenge</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/104896/Masamunekuns-Revenge-After-School/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Masamune-kun’s Revenge: After School" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104896-toOpkWRYKQLH.jpg">
+				<p id="mangatitle"><center>Masamune-kun’s Revenge: After School</center></p></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="https://anilist.co/manga/53718/Sword-Art-Online-Aincrad/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Aincrad" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx53718-vP0MCWbNEfwW.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Aincrad</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/92130/Sword-Art-Online-Calibur/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Calibur" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx92130-ovooPu5OHRhq.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Calibur</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/74733/Sword-Art-Online-Fairy-Dance/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Fairy Dance" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx74733-tt46k1Jp3kC4.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Fairy Dance</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/99189/Sword-Art-Online-Mothers-Rosary/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Mother's Rosary" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx99189-Wh2XPi3szdoV.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Mother's Rosary</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/85440/Sword-Art-Online-Phantom-Bullet/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Phantom Bullet" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx85440-irjNfiIftdPm.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Phantom Bullet</center></p></a></td>
+		</tr>		
+	</table>
+	<center><h1 id="mangatitle">Planning to Read</h1></center>
+	<table class="mangabox">
+		<tr>
+			<td>
+				<a href="https://anilist.co/manga/53390/Attack-on-Titan/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Attack on Titan" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53390-1RsuABC34P9D.jpg">
+				<p id="mangatitle"><center>Attack on Titan</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/85471/Eromanga-Sensei/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Eromanga Sensei" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85471-8HgNG2bIXEzc.jpg">
+				<p id="mangatitle"><center>Eromanga Sensei</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/72451/Horimiya/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Horimiya" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx72451-vVXtRwyttjGG.png">
+				<p id="mangatitle"><center>Horimiya</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/97852/Komi-Cant-Communicate/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Komi Can't Communicate" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx97852-IKHEoAxYXPCo.jpg">
+				<p id="mangatitle"><center>Komi Can't Communicate</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/87056/Magical-Sempai/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Magical Sempai" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx87056-x0hz6RJBtYqP.jpg">
+				<p id="mangatitle"><center>Magical Sempai</center></p></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="https://anilist.co/manga/127664/Miraculous-Lady-Bug--Chat-Noir/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Miraculous: Lady Bug & Chat Noir" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127664-fcEGpNHGIcvi.jpg">
+				<p id="mangatitle"><center>Miraculous: Lady Bug & Chat Noir</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/86303/Miss-Kobayashis-Dragon-Maid/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Miss Kobayashi's Dragon Maid" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/56303-3JwLxfA7J943.jpg">
+				<p id="mangatitle"><center>Miss Kobayashi's Dragon Maid</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/61499/Nisekoi-False-Love/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Nisekoi: False Love" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx61499-aXInaLRa6xv5.jpg">
+				<p id="mangatitle"><center>Nisekoi: False Love</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/74347/OnePunch-Man/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="One-Punch Man" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx74347-O6KMkECzHPOE.jpg">
+				<p id="mangatitle"><center>One-Punch Man</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/58107/Sakurasou-no-Pet-na-Kanojo/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sakurasou no Pet na Kanojo" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx58107-F2OsiapIcUOa.jpg">
+				<p id="mangatitle"><center>Sakurasou no Pet na Kanojo</center></p></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="https://anilist.co/manga/51479/Sword-Art-Online/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx51479-ufMREP6e1UkT.jpg">
+				<p id="mangatitle"><center>Sword Art Online</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/70053/Sword-Art-Online-4koma/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online 4-koma" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/40053.jpg">
+				<p id="mangatitle"><center>Sword Art Online 4-koma</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/73921/Sword-Art-Online-Progressive/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online Progressive" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx73921-HKvbNY03AzY0.jpg">
+				<p id="mangatitle"><center>Sword Art Online Progressive</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/82277/Sword-Art-Online-Progressive/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online Progressive" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx82277-EPd5PzBLSI5h.jpg">
+				<p id="mangatitle"><center>Sword Art Online Progressive</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/118707/Sword-Art-Online-Alicization-Lycoris/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118707-PzcRNCACbKgz.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Alicization Lycoris</center></p></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="https://anilist.co/manga/85160/Sword-Art-Online-Girls-Ops/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Girls Ops" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85160-oBlMm119tKba.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Girls Ops</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/106933/Sword-Art-Online-Hollow-Realization/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Hollow Realization" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/n106933-IBy3K95DtCXI.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Hollow Realization</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/117061/Sword-Art-Online-Kiss-and-Fly/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Kiss and Fly" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117061-qBpWdlfzNTMZ.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Kiss and Fly</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/106537/Sword-Art-Online-Ordinal-Scale/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Ordinal Scale" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106537-QC36IgPQKYZr.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Ordinal Scale</center></p></a></td>
+			<td>
+				<a href="https://anilist.co/manga/97362/Sword-Art-Online-Project-Alicization/" style="color:white;" target="_blank">
+				<img class="mangaimg" alt="Sword Art Online: Project Alicization" src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx97362-NTuKkPbJD2BT.jpg">
+				<p id="mangatitle"><center>Sword Art Online: Project Alicization</center></p></a></td>
+		</tr>
+	</table>
+<!-------------------------------------------------------------------------Scout Sim Page------------------------------------------------------------------->
+	<center>		
+		<input type="button" id="scoutbutton" value="Click to Scout for a Character">
+	<br>
+	<br>
+	<center>
+		<div style="font-size: 30px; width: 500px;">		
+		<div id="name"></div>
+		<div id="startext" style=" float: left; padding-left:125px;"></div>
+		<div id="stars" style="color: #FFC61E; float: left; padding-left:5px;"></div>
+		<div id="starsblank" style=" float: left; padding-left:5px;"></div>
+		</div>
+	</center>
+	<br>
+	<br>
+	<br>
+	<center>
+		<img id="image" height="500" width="500" src="blackbmg.png">
+	</center>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="ScoutInHTMLJavaCode3.5.js"></script>
+<!-------------------------------------------------------------------------Portfolio Page------------------------------------------------------------------->
+<h1><center><strong>My Portfolio</strong></center></h1>
+	
+	<center>
+		<div id="projectbox">
+			<h1>lab-05-js-py</h1>
+			<h2>Greetings</h2>
+			<button class="button" onclick="greetings()">Run Code</button>
+			<h2>Madlibs</h2>
+			<button class="button" onclick="madlibs()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-06-review</h1>
+			<h2>Miles</h2>
+			<button class="button" onclick="miles()">Run Code</button>
+			<h2>Temperature</h2>
+			<button class="button" onclick="temp()">Run Code</button>
+			<h2>Say Twice</h2>
+			<button class="button" onclick="saytwice()">Run Code</button>
+			<h2>Shout</h2>
+			<button class="button" onclick="shout()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-07-conditionals</h1>
+			<h2>Cake</h2>
+			<button class="button" onclick="cake()">Run Code</button>
+			<h2>Spanish</h2>
+			<button class="button" onclick="spanish()">Run Code</button>
+			<h2>OddCal</h2>
+			<button class="button" onclick="oddcal()">Run Code</button>
+			<h2>Flow Chart</h2>
+			<button class="button" onclick="flowchart()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-08-for-loops</h1>
+			<h2>Tens</h2>
+			<button class="button" onclick="tens()">Run Code</button>
+			<h2>Average</h2>
+			<button class="button" onclick="average()">Run Code</button>
+			<h2>Average (Loops Version)</h2>
+			<button class="button" onclick="averagev()">Run Code</button>
+			<h2>Fizzbuzz</h2>
+			<button class="button" onclick="fizzbuzz()">Run Code</button>
+			<h2>Party</h2>
+			<button class="button" onclick="party()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-09-functions</h1>
+			<h2>Double</h2>
+			<button class="button" onclick="double()">Run Code</button>
+			<h2>Double with Convertion</h2>
+			<button class="button" onclick="doublec()">Run Code</button>
+			<h2>Plurize</h2>
+			<button class="button" onclick="plurize()">Run Code</button>
+			<h2>Factorial</h2>
+			<button class="button" onclick="factorial()">Run Code</button>
+			<h2>Factorial (Version 2)</h2>
+			<button class="button" onclick="factorialv()">Run Code</button>
+			<h2>-5 to 3</h2>
+			<button class="button" onclick="ftt()">Run Code</button>
+			<h2>Yes and No</h2>
+			<button class="button" onclick="yesandno()">Run Code</button>
+			<h2>Fortune</h2>
+			<button class="button" onclick="fortune()">Run Code</button>
+			<h2>Greetings</h2>
+			<button class="button" onclick="greetingsf()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-10-more-loops</h1>
+			<h2>Gimmy My Number</h2>
+			<button class="button" onclick="gmn()">Run Code</button>
+			<h2>Happy New Year</h2>
+			<button class="button" onclick="ny()">Run Code</button>
+			<h2>Happy New Year (Version 2)</h2>
+			<button class="button" onclick="nyv()">Run Code</button>
+			<h2>Which Floor Do you Work on</h2>
+			<button class="button" onclick="wfdywo()">Run Code</button>
+		</div>
+
+		<div id="projectbox">
+			<h1>lab-13a-canvas</h1>
+			<h2>Square</h2>
+			<button class="button" onclick="square()">Run Code</button>
+			<h2>Square Circle</h2>
+			<button class="button" onclick="squarecircle()">Run Code</button>
+			<h2>Custom Circle</h2>
+			<button class="button" onclick="customcircle()">Run Code</button>
+			<h2>Circle Animate</h2>
+			<button class="button" onclick="animate()">Run Code</button>
+			<h2>Five</h2>
+			<button class="button" onclick="five()">Run Code</button>
+			<h2>Alternating</h2>
+			<button class="button" onclick="alternating()">Run Code</button>
+		</div>
+		<canvas id="sketch" width="300" height="300">
+	</center>
+</body>
+</html>

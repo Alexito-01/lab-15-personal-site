@@ -1,0 +1,177 @@
+.button {
+	font-size: 20px;
+	font-family: SAOWelcome;
+}
+  #scoutbutton {
+    font-size: 30px;
+    color: white;
+    background-image: url("button_lottery.png");
+    border-color: transparent;
+    background-color: transparent;
+    height: 100px;
+    width: 500px;
+    padding: 5px;
+    font-family: SAOWelcome;
+  }
+
+#halfofhalf {
+	margin-left: 15%;
+}
+body {
+	background-color: black;
+	color: #fff;
+}
+
+@font-face {
+	font-family: 'SAOWelcome';
+	src: url("fonts/SAOWelcome.eot");
+	src:
+	url("fonts/SAOWelcome.woff") format("woff"),
+	url("fonts/SAOWelcome.otf") format("opentype"),
+	url("fonts/SAOWelcome.svg#filename") format("svg");
+}
+
+ html { font-family: SAOWelcome, sans-serif; }
+
+ h1, h2 {
+ 	font-family: 'Indie Flower', cursive;
+ }
+
+ .header {
+ 	height: 30%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+	background-color: #5d5d5d;
+}
+
+.navBar {
+  	background-color: #4d4d4d;
+}
+
+ .headerfont {
+ 	font-family: 'Reggae One', cursive;
+ }
+
+.mariocode {
+	/*height: 900px;
+	width: 700px;*/
+	float: right;
+	padding-right: 300px;
+}
+/*----------------Banner CSS----------------------*/
+
+.banner1 {
+	position: absolute;
+	top: 8px;
+	left: 700px
+	transform: translate(-50%, -50%);
+	clip: rect(0px, 54.8px, 216px, 0px);
+	opacity: 0%;
+	z-index: 7;
+}
+
+.banner2 {
+	position: absolute;
+	top: 8px;
+	left: 900px
+	transform: translate(-50%, -50%);
+	clip: rect(0px, 109.6px, 216px, 0px);
+	opacity: 0%;
+	z-index: 6;
+}
+
+.banner3 {
+	position: absolute;
+	top: 8px;
+	left: 700px
+	transform: translate(-50%, -50%);
+	clip: rect(0px, 164.4px, 216px, 0px);
+	opacity: 0%;
+	z-index: 5;
+}
+
+.banner4 {
+	position: absolute;
+	top: 8px;
+	left: 700px
+	transform: translate(-50%, -50%);
+	clip: rect(0px, 219.2px, 216px, 0px);
+	opacity: 0%;
+	z-index: 4;
+}
+
+.banner5 {
+	position: absolute;
+	top: 8px;
+	left: 700px
+	transform: translate(-50%, -50%);
+	clip: rect(0px, 274px, 216px, 0px);
+	opacity: 0%;
+	z-index: 3;
+}
+
+.banner6 {
+	position: absolute;
+	top: 8px;
+	left: 700px
+	transform: translate(-50%, -50%);
+	clip: rect(0px, 328.8px, 216px, 0px);
+	opacity: 0%;
+	z-index: 2;
+}
+
+.banner7 {
+	position: absolute;
+	top: 8px;
+	left: 700px
+	transform: translate(-50%, -50%);
+	clip: rect(0px, 383.6px, 216px, 0px);
+	opacity: 0%;
+	z-index: 1;
+}
+
+/*----------------Contact Me----------------------*/
+.contactmessage {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    outline: none;
+    font-size: 12px;
+    resize: none;
+    line-height: 1.5rem;
+}
+
+/*----------------Manga----------------------*/
+#mangatitle {
+	color: #fff;
+}
+
+.mangaimg {
+	height: 400px;
+	width: 300px;
+	padding: 5px;
+}
+.mangabox {
+	color: #fff;
+	width: 1525px;
+	padding: 10px;
+	margin: auto;
+}
+
+/*----------------Profile----------------------*/
+#projectbox {
+	width: 250px;
+	float: left;
+	position: relative;
+	padding-left: 5px;
+}
+/*
+Images:
+https://walfiegif.files.wordpress.com/2020/12/out-transparent-2.gif?w=371&h=328
+https://media.tenor.com/images/a3b9a5c808464f3627659c8a58969433/tenor.gif
+https://i.kym-cdn.com/photos/images/newsfeed/001/933/864/e0b.gif
+https://i.pinimg.com/originals/81/01/77/8101776695f5214731c25b4b7b462ec9.png
+*/
