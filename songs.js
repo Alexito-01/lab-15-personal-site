@@ -4,15 +4,15 @@ var key = 0;
 
 function clear() {
 
-  banneraudioaudio.pause();
+  banneraudio.pause();
 
 }
 
 function fubuki() {
   clear();
   if (key == 0) {
-    banneraudioaudio = new Audio("songs/FubukiSong.mp3");
-    banneraudioaudio.play();
+    banneraudio = new Audio("songs/FubukiSong.mp3");
+    banneraudio.play();
     key = 1;
   } else {
     key = 0;
@@ -22,8 +22,8 @@ function fubuki() {
 function ina() {
   clear();
   if (key == 0) {
-    banneraudioaudio = new Audio("songs/InaSong.mp3");
-    banneraudioaudio.play();
+    banneraudio = new Audio("songs/InaSong.mp3");
+    banneraudio.play();
     key = 1;
   } else {
     key = 0;
@@ -33,8 +33,8 @@ function ina() {
 function mori() {
   clear();
   if (key == 0) {
-    banneraudioaudio = new Audio("songs/MoriSong.mp3");
-    banneraudioaudio.play();
+    banneraudio = new Audio("songs/MoriSong.mp3");
+    banneraudio.play();
     key = 1;
   } else {
     key = 0;
@@ -44,8 +44,8 @@ function mori() {
 function gura() {
   clear();
   if (key == 0) {
-    banneraudioaudio = new Audio("songs/GuraSong.mp3");
-    banneraudioaudio.play();
+    banneraudio = new Audio("songs/GuraSong.mp3");
+    banneraudio.play();
     key = 1;
   } else {
     key = 0;
@@ -55,8 +55,8 @@ function gura() {
 function kiara() {
   clear();
   if (key == 0) {
-    banneraudioaudio = new Audio("songs/KiaraSong.mp3");
-    banneraudioaudio.play();
+    banneraudio = new Audio("songs/KiaraSong.mp3");
+    banneraudio.play();
     key = 1;
   } else {
     key = 0;
@@ -66,8 +66,8 @@ function kiara() {
 function ame() {
   clear();
   if (key == 0) {
-    banneraudioaudio = new Audio("songs/AmeliaSong.mp3");
-    banneraudioaudio.play();
+    banneraudio = new Audio("songs/AmeliaSong.mp3");
+    banneraudio.play();
     key = 1;
   } else {
     key = 0;
@@ -77,8 +77,8 @@ function ame() {
 function pekora() {
   clear();
   if (key == 0) {
-    banneraudioaudio = new Audio("songs/PekoraSong.mp3");
-    banneraudioaudio.play();
+    banneraudio = new Audio("songs/PekoraSong.mp3");
+    banneraudio.play();
     key = 1;
   } else {
     key = 0;
