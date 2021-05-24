@@ -1,53 +1,53 @@
 var noise = [{
-    a: '|soundboard/a.mp3|',
+    a: '|soundboard/a.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    cydthl: '|soundboard/canyoudothehololivehum.mp3|',
+    cydthl: '|soundboard/canyoudothehololivehum.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    catlaugh: '|soundboard/canyoudothehololivehum.mp3|',
+    catlaugh: '|soundboard/canyoudothehololivehum.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    giggle1: '|soundboard/giggle1.mp3|',
+    giggle1: '|soundboard/giggle1.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    giggle2: '|soundboard/giggle2.mp3|',
+    giggle2: '|soundboard/giggle2.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    giggle3: '|soundboard/giggle3.mp3|',
+    giggle3: '|soundboard/giggle3.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    guradesu: '|soundboard/guradesu.mp3|',
+    guradesu: '|soundboard/guradesu.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    huh: '|soundboard/kiaracallsgura.mp3|',
+    huh: '|soundboard/kiaracallsgura.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    nya: '|soundboard/nya.mp3|',
+    nya: '|soundboard/nya.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    nya_laugh: '|soundboard/nya_laugh.mp3|',
+    nya_laugh: '|soundboard/nya_laugh.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    Peek_a_boo: '|soundboard/Peek_a_boo.mp3|',
+    Peek_a_boo: '|soundboard/Peek_a_boo.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    pekoralaugh: '|soundboard/pekoralaugh.mp3|',
+    pekoralaugh: '|soundboard/pekoralaugh.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    samedesu: '|soundboard/samedesu.mp3|',
+    samedesu: '|soundboard/samedesu.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    Shaaarrrkk: '|soundboard/Shaaarrrkk.mp3|',
+    Shaaarrrkk: '|soundboard/Shaaarrrkk.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    Shaaarrrkk_SHAAARRRKK: '|soundboard/Shaaarrrkk_SHAAARRRKK.mp3|',
+    Shaaarrrkk_SHAAARRRKK: '|soundboard/Shaaarrrkk_SHAAARRRKK.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    SharkLaugh1: '|soundboard/SharkLaugh1.mp3|',
+    SharkLaugh1: '|soundboard/SharkLaugh1.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
   {
-    SharkLaugh2: '|soundboard/SharkLaugh2.mp3|',
+    SharkLaugh2: '|soundboard/SharkLaugh2.mp3|',//Credit: https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g
   },
 ]
 
