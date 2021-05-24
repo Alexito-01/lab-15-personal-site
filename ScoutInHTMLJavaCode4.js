@@ -1,4 +1,4 @@
-//Template: "|id number|": "|name|subname|stars|owned Note: owned is either 0 or 1|", 
+//Template: "|id number|": "|name|subname|stars|owned Note: owned is either 0 or 1|", //Images datamined
 var characters = [{
     "|0|": "|Kirito|Black Swordsman|4||",
   },
